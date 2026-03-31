@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+*.log
+
+# Vector Store / FAISS
+# (We don't commit binary indexes, we recreate them from source data)
+faiss_index/
+*.faiss
+*.pkl
+
+# Logs and Debug
+debug_log.txt
+server_log.txt
+test_out.txt
+
+# Editor / System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
