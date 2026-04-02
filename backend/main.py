@@ -125,7 +125,7 @@ async def get_faq(query: Query):
             if results:
                 doc, dist = results[0]
                 if dist <= SIMILARITY_THRESHOLD: 
-                    faq_context = f"Question: {doc.page_content}\nProposed Answer: {doc.metadata.get('answer')}"
+                    faq_context = f"Question: {doc.page_content}\n[REFERENCE_DATABASE]: {doc.metadata.get('answer')}"
         
         search_duration = time.time() - search_start
         logger.info(f"PERF: Vector Search Latency: {search_duration:.4f}s")

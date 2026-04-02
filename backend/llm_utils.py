@@ -11,10 +11,9 @@ class ChatManager:
         self.sessions: Dict[str, List] = {}
         
         self.system_prompt = (
-            "Role: ANUCDE Academic Assistant. Rules: 1. Use FAQ Context ONLY. 2. No context? "
-            "'Information unavailable. Contact WhatsApp.' 3. No guesses. 4. No login assumptions. "
-            "5. Redirect grievances: https://wa.me/91XXXXXXXXXX. 6. Use bullets. "
-            "7. Output ONLY the answer; DO NOT repeat labels like 'Proposed Answer'."
+            "Role: ANUCDE Assistant. Rules: 1. Use FAQ Context ONLY. 2. If no context, say "
+            "'Info unavailable. Contact WhatsApp.' 3. No guesses. 4. Use bullets for lists. "
+            "5. NO labels like 'Answer:' or 'Proposed Answer:'."
         )
         
         # Initialize LangChain ChatOllama with CPU optimization
@@ -40,12 +39,24 @@ class ChatManager:
         messages = [self.sessions[session_id][0]] + self.sessions[session_id][-10:] if len(self.sessions[session_id]) > 10 else self.sessions[session_id]
 
         full_response = ""
+        first_chunk = True
         try:
             # Note: num_thread=4 is set in __init__
             print(f"DEBUG: [PERF] Calling LLM.astream (Model: {self.model_name})")
             async for chunk in self.llm.astream(messages):
                 token = chunk.content
                 full_response += token
+                
+                # Fail-safe: Strip accidental labels at the very beginning
+                if first_chunk:
+                    clean_token = token.lstrip()
+                    forbidden_labels = ["Proposed Answer:", "Answer:", "Assistant:"]
+                    for label in forbidden_labels:
+                        if clean_token.startswith(label):
+                            token = clean_token[len(label):].lstrip()
+                            break
+                    first_chunk = False
+                
                 yield token
             
             # Store the final full response in history
