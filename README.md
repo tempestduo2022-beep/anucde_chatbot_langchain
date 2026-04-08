@@ -43,7 +43,7 @@ python indexer.py
 # Run the FastAPI server natively
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
-*(Alternatively, you can just run `docker-compose up --build` from the root repository directory to bundle everything at once).*
+*(IMPORTANT: You can just run `docker-compose up --build` from the root repository directory to bundle everything at once instead of the above steps to automate the process).*
 
 ### 3. Testing 
 The repository includes a complete automated unit & performance test suite located in `backend/tests/`.
