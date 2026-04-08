@@ -1,0 +1,122 @@
+[
+    {
+        "query": "What is the admission procedure for Open and Distance Learning (ODL / Distance Education) programmes at ANUCDE? How do I apply for ODL admissions? Admission process at anucde. How to join anucde distance education? Admission procedure. How can I apply?",
+        "expected_answer": "The admission process for ODL programmes is exclusively online. Applicants should visit https://anucde.info and click on the 'Admission Application form' link. Register with a mobile number and email, fill out the application form, and upload scanned copies of required documents (Photo, Signature, Aadhaar, Caste/PH certificate if applicable, and eligibility documents). The fee must be paid online at the end of the application process. Confirmation of admission is subject to verification of original documents at the ANU CDE office."
+    },
+    {
+        "query": "How do I take admission in the Regular Campus courses of Acharya Nagarjuna University? Regular campus admission process. Non-distance courses.",
+        "expected_answer": "For regular campus courses (non-distance), please refer to the official university portal at https://nagarjunauniversity.ac.in. ANUCDE only handles Distance Education (ODL) admissions, which are done through https://anucde.info."
+    },
+    {
+        "query": "Can I submit my admission application form manually? Is offline application possible?",
+        "expected_answer": "No, manual submission of the application form is not permitted. All applications must be submitted online through the official website, https://www.anucde.info. It is recommended to read the prospectus carefully before applying."
+    },
+    {
+        "query": "Is it possible to pay the course fee in installments? Fee payment installments.",
+        "expected_answer": "No, fee payment in installments is not permitted at ANUCDE. The full year-wise fee must be paid online during the application submission process."
+    },
+    {
+        "query": "Is there any age restriction for studying at ANUCDE? Minimum and maximum age limit.",
+        "expected_answer": "There is no upper age restriction for taking admission into any programme under the ODL mode at ANUCDE. However, for Undergraduate programmes, applicants must have attained 18 years of age by specific dates (June 30 for the July session, or December 31 for the January session)."
+    },
+    {
+        "query": "What are the different academic sessions (batches) offered by ANUCDE? Calendar year and Academic year sessions.",
+        "expected_answer": "As per UGC-DEB guidelines, ANU CDE offers two batches every academic year: a) Academic session beginning January for the Calendar Year, and b) Academic session beginning July for the Academic Year. The Admission Notification for CALENDAR YEAR-2026 is currently available on the official website."
+    },
+    {
+        "query": "How many programmes does ANUCDE offer? What are the courses I can take? List of available courses.",
+        "expected_answer": "ANU CDE offers 14 Post Graduate programmes, 13 Under Graduate programmes, 2 Diploma programmes, and 2 Certificate programmes. Detailed information is available on the official website."
+    },
+    {
+        "query": "What is the medium of instruction for the programmes? English or Telugu medium.",
+        "expected_answer": "English is the medium of instruction for most programmes. Some programmes are also offered in regional languages such as Telugu. Please refer to the specific admission notification and programme structure for details."
+    },
+    {
+        "query": "Is the admission fee refundable if I cancel my admission? Refund policy.",
+        "expected_answer": "No, according to ANU CDE norms, the fee once paid is non-refundable and non-adjustable under any circumstances. However, students may be allowed to change to another programme if they meet the eligibility requirements."
+    },
+    {
+        "query": "How long does the admission confirmation process take? When will I get my seat confirmed? Admission approval timeline.",
+        "expected_answer": "Admission confirmation typically takes a maximum of 2 months from the date of application, following the verification of original documents."
+    },
+    {
+        "query": "What are the eligibility criteria and required documents for Undergraduate (UG) programmes? UG admission requirements.",
+        "expected_answer": "A pass in 10+2 or equivalent is required. For documents, age proof is mandatory (SSC/10th certificate or Birth Certificate prioritize). Original documents should be scanned and uploaded during the online application process."
+    },
+    {
+        "query": "What are the eligibility criteria and required documents for Postgraduate (PG) programmes? PG admission requirements.",
+        "expected_answer": "Applicants must have a Graduation Original Degree or Provisional Certificate and a Memorandum of Marks from a qualifying examination. A pass in the ANUCDE Entrance Test is specifically required for MBA and MCA courses. Age proof is also mandatory."
+    },
+    {
+        "query": "What is the procedure and fee for changing a programme? Course change process.",
+        "expected_answer": "Programme changes are generally not permitted. However, if a student is ineligible or desires a change, they must apply via the student login within 15 days of provisional admission. A fee of Rs. 500/- is applicable."
+    },
+    {
+        "query": "What document is used as the basis for the name on student certificates? Correction in name.",
+        "expected_answer": "The student's name on certificates is based on the SSC (10th Class) certificate or, in its absence, a Birth Certificate issued by a competent authority. Married female candidates wishing to use a changed surname must submit the original Gazette Notification of the name change."
+    },
+    {
+        "query": "How can I access the programme syllabus and course content? Download syllabus.",
+        "expected_answer": "The syllabus and content for all programmes are available for download on the official website, https://anucde.info, under the 'Programmes' or 'Study Material' sections."
+    },
+    {
+        "query": "What is the eligibility for MCA at ANUCDE? Master of Computer Applications details.",
+        "expected_answer": "Eligibility for MCA: Any bachelors degree with 50% aggregate (45% for BC, ST, SC) other than BFA or BOL, with Mathematics at Intermediate or Degree level. Candidates must also have a valid rank in ANUCET Entrance Test, ICET, or any state/central common entrance test. The course duration is 2 years (4 semesters) and the medium is English. [MCA Syllabus](https://anucde.info/material/MCA%20CERTIFIED%20SYLLABUS.pdf)"
+    },
+    {
+        "query": "What is the eligibility for MBA at ANUCDE? Master of Business Administration details.",
+        "expected_answer": "Eligibility for MBA: Any bachelors degree (other than BFA and BOL). Candidates must pass the ANUCDE Entrance Test or have a valid rank in ICET/equivalent common entrance tests. Detailed information can be found in the prospectus. [MBA Syllabus](https://anucde.info/materialMBA%20CERTIFIED%20SYLLABUS.pdf)"
+    },
+    {
+        "query": "What are the eligibility and details for MA English at ANUCDE?",
+        "expected_answer": "Eligibility for MA English: Any Bachelors Degree with English as a subject or one paper in English with at least 100 marks (for professional graduates). The duration is 2 years (4 semesters) and the medium is English. [MA English Syllabus](http://anucde.info/syllabus/3.%20M.A%20-%20English.pdf)"
+    },
+    {
+        "query": "What is the eligibility for BA (Economics, History, Politics) at ANUCDE?",
+        "expected_answer": "Eligibility for BA (EHP): 10+2 or equivalent stream. The duration is 3 years (6 semesters) and the medium of instruction is Telugu. [BA EHP Syllabus](https://anucde.info/syllabus/40.%20B.A%20%28ECONOMICS,%20HISTORY,%20POLITICS%29.pdf)"
+    },
+    {
+        "query": "What is the eligibility for 41. B.A (ECONOMICS, PUB. ADM., POLITICS) at ANUCDE?",
+        "expected_answer": "Eligibility: 10 + 2. Duration: 3Yrs (6 sems.). Medium: Telugu. [Syllabus](https://anucde.info/syllabus/41.%20B.A%20(ECONOMICS,%20PUB.%20ADM.,%20POLITICS).pdf). [Material](https://anucde.info/baepp1.asp)."
+    },
+    {
+        "query": "What is the eligibility for 42. B.A (ECONOMICS, PUB. ADM., SOCIOLOGY) at ANUCDE?",
+        "expected_answer": "Eligibility: 10+2 Stream. Duration: 3Yrs (6 sems.). Medium: Telugu. [Syllabus](https://anucde.info/syllabus/42.%20B.A%20(ECONOMICS,%20PUB.%20ADM.,%20SOCIOLOGY).pdf). [Material](https://anucde.info/baeps.asp)."
+    },
+    {
+        "query": "What is the eligibility for 43. B. A (ECONOMICS, HISTORY, SOCIOLOGY) at ANUCDE?",
+        "expected_answer": "Eligibility: 10+2 Stream. Duration: 3Yrs (6 sems.). Medium: Telugu. [Syllabus](https://anucde.info/syllabus/43.%20B.%20A%20(ECONOMICS,%20HISTORY,%20SOCIOLOGY).pdf). [Material](https://anucde.info/baehs.asp)."
+    },
+    {
+        "query": "What is the eligibility for 44. B.A (EONOMICS, POLITICS, SOCIOLOGY) at ANUCDE?",
+        "expected_answer": "Eligibility: 10+2 Stream. Duration: 3Yrs (6 sems.). Medium: Telugu. [Syllabus](https://anucde.info/syllabus/44.%20B.A%20(EONOMICS,%20POLITICS,%20SOCIOLOGY).pdf). [Material](https://anucde.info/baepols.asp)."
+    },
+    {
+        "query": "What is the eligibility for 45. B.A (HISTORY, POLITICS, SOCIOLOGY) at ANUCDE?",
+        "expected_answer": "Eligibility: 10+2 Stream. Duration: 3Yrs (6 sems.). Medium: Telugu. [Syllabus](https://anucde.info/syllabus/45.%20B.A%20(HISTORY,%20POLITICS,%20SOCIOLOGY).pdf). [Material](https://anucde.info/bahps.asp)."
+    },
+    {
+        "query": "What is the eligibility for 47. B.A (PUB. ADM., POLITICS, HISTORY) at ANUCDE?",
+        "expected_answer": "Eligibility: 10+2 Stream. Duration: 3Yrs (6 sems.). Medium: Telugu. [Syllabus](https://anucde.info/syllabus/47.%20B.A%20(PUB.%20ADM.,%20POLITICS,%20HISTORY).pdf). [Material](https://anucde.info/bapph.asp)."
+    },
+    {
+        "query": "What is the eligibility for 55. B.A (SPL. ENGLISH, HISTORY, SPL TELUGU) at ANUCDE?",
+        "expected_answer": "Eligibility: 10+2 Stream. Duration: 3Yrs (6 sems.). Medium: Telugu. [Syllabus](https://anucde.info/syllabus/55.%20B.A%20(SP.%20ENGLISH,%20HISOTY,%20SP.%20TELUGU).pdf). [Material](https://anucde.info/baspl55.asp)."
+    },
+    {
+        "query": "What is the eligibility for 151. B.A. (ECONOMICS, BANKING, COMP. APP.) at ANUCDE?",
+        "expected_answer": "Eligibility: 10+2 Stream. Duration: 3Yrs (6 sems.). Medium: Telugu. [Syllabus](https://anucde.info/syllabus/151.%20B.A.%20(ECONOMICS,%20BANKING,%20COMP.%20APP.).pdf). [Material](https://anucde.info/baebc.asp)."
+    },
+    {
+        "query": "What is the eligibility for B.Com and BBA at ANUCDE?",
+        "expected_answer": "Eligibility for B.Com (General/Computer Applications) and BBA is a pass in 10+2 or equivalent examination. The duration for these Undergraduate programs is 3 years. Syllabus links: [B.Com General](http://anucde.info/syllabus/58BCOMGENERAL.pdf), [B.Com Computer Applications](http://anucde.info/syllabus/68BCOMCOMP.pdf), [BBA](http://anucde.info/syllabus/164BBA.pdf)"
+    },
+    {
+        "query": "What is the eligibility for B.Lib.I.Sc and M.Lib.I.Sc at ANUCDE? Library Science courses.",
+        "expected_answer": "Eligibility for B.Lib.I.Sc (Bachelor of Library & Information Science) is any bachelors degree. For M.Lib.I.Sc (Master of Library & Information Science), a degree in B.Lib.I.Sc is required. Both programs are 1-year duration. Syllabus: [B.Lib.I.Sc](https://anucde.info/syllabus/80.%20B.L.I.Sc%281%29.pdf), [M.Lib.I.Sc](https://anucde.info/syllabus/14.%20MLISC.pdf)"
+    },
+    {
+        "query": "How are classes conducted? Weekend classes and PCP details.",
+        "expected_answer": "Personal Contact Programme (PCP) classes are typically conducted on Saturdays, Sundays, and public holidays at various Learner Support Centres (LSCs). These classes offer orientation and guidance but do not cover the entire syllabus. Students should check the PCP timetable on the official website: [PCP Timetable](http://anucde.info/pcptimetable.php)"
+    }
+]

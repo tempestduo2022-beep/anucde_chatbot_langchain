@@ -10,3 +10,10 @@ langchain-ollama
 sentence-transformers
 python-multipart
 python-dotenv
+slowapi
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+httpx

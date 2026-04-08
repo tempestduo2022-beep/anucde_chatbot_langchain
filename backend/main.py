@@ -1,7 +1,10 @@
-from fastapi import FastAPI, HTTPException, status
+from fastapi import FastAPI, HTTPException, status, Request
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 import os
 from contextlib import asynccontextmanager
 from typing import List, Optional
@@ -57,15 +60,19 @@ async def lifespan(app: FastAPI):
             print(f"WARNING: Index directory {INDEX_DIR} not found! Run indexer.py first.", flush=True)
         
         print("Initializing LangChain Chat Manager (Streaming)...", flush=True)
-        chat_manager = ChatManager() # Default to Qwen 2.5 3B via Ollama
-        print("Chat Manager ready.", flush=True)
+        ollama_url = os.getenv("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
+        chat_manager = ChatManager(base_url=ollama_url) 
+        print(f"Chat Manager ready (Ollama: {ollama_url}).", flush=True)
 
     except Exception as e:
         print(f"CRITICAL ERROR during startup: {e}", flush=True)
     yield
     print("Shutting down...", flush=True)
 
+limiter = Limiter(key_func=get_remote_address, strategy="moving-window")
 app = FastAPI(title="ANUCDE FAQ Bot API (LangChain Streaming)", lifespan=lifespan)
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 app.add_middleware(
     CORSMiddleware,
@@ -86,7 +93,8 @@ async def ping():
 # --- FAQ & CHATBOT LOGIC ---
 
 @app.post("/faq")
-async def get_faq(query: Query):
+@limiter.limit("5/minute")
+async def get_faq(query: Query, request: Request):
     try:
         text = query.text.lower()
         
