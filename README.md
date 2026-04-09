@@ -47,6 +47,14 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 ### 3. Testing 
 The repository includes a complete automated unit & performance test suite located in `backend/tests/`.
+
+We implemented a robust testing strategy tailored for LLM/Chatbot applications to ensure quality and reliability:
+- **API Tests (`test_api.py`)**: Verifies that the FastAPI endpoints (`/ping`, `/faq`) are responsive and properly handle CORS policies so the frontend can securely communicate with the backend.
+- **Session & Logic Tests (`test_chat_manager.py`)**: Ensures that LangChain's conversational memory correctly captures user context and properly resets/clears sessions when required, preventing conversation data bleeding across different users.
+- **RAG Fidelity Tests (`test_rag_quality.py`)**: Tests whether the chatbot accurately prioritizes explicit keywords (e.g., returning the direct Hall Ticket URL) and validates "Faithfulness"—ensuring the bot admits when it doesn't know an answer rather than hallucinating false information from outside the university's context.
+- **Performance Tests (`test_performance.py`)**: Simulates user load and measures Latency to guarantee the time-to-first-token (TTFT) remains within acceptable limits.
+
+To run the suite:
 ```bash
 cd backend
 pytest tests/
